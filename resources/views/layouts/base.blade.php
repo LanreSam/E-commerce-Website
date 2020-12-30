@@ -15,7 +15,8 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/owl.carousel.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/chosen.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/color-01.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/color-01.css') }}">
+    @livewireStyles
 </head>
 <body class="home-page home-01 ">
 
@@ -76,7 +77,7 @@
 					<div class="mid-section main-info-area">
 
 						<div class="wrap-logo-top left-section">
-							<a href="index.html" class="link-to-home"><img src="assets/images/logo-top-1.png" alt="mercado"></a>
+							<a href="index.html" class="link-to-home"><img src="{{ asset('assets/images/logo-top-1.png') }}" alt="mercado"></a>
 						</div>
 
 						<div class="wrap-search center-section">
@@ -448,6 +449,7 @@
 	<script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
 	<script src="{{ asset('assets/js/jquery.countdown.min.js') }}"></script>
 	<script src="{{ asset('assets/js/jquery.sticky.js') }}"></script>
-	<script src="{{ asset('assets/js/functions.js') }}"></script>
+    <script src="{{ asset('assets/js/functions.js') }}"></script>
+    @livewireScripts
 </body>
 </html>
