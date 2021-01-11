@@ -21,7 +21,9 @@ class AuthAdmin
         }
         else {
             session()->flush()->redirect('login');
+            
+            return $next($request);
         }
-        return $next($request);
+        
     }
 }
